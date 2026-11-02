@@ -48,4 +48,26 @@ const userInfo = (...info : [userName: string, userAge: number, isActive: boolea
   console.log("User Name is : " + userName + " \nUser age is : " + userAge + " \nUser active status is : " + isActive)
 }
 
-userInfo("Riead", 24, true);
+// userInfo("Riead", 24, true);
+
+type User = {
+  firstName : string;
+  lastName : string;
+  age : number;
+  isActive : boolean;
+}
+
+interface User2  {
+  firstName : string;
+  lastName : string;
+  age : number;
+  isActive : boolean;
+}
+
+const user : User = {
+  firstName: "Riead",
+  lastName: "Mia",
+  age: 24,
+  isActive: true
+}
+
