@@ -9,3 +9,12 @@ const addTwoNumber = (a: number, b: number): number => {
 };
 
 console.log(addTwoNumber(500, 30));
+
+const rollNumber: number[] = [1, 2, 3];
+const subjectName: string[] = ["Bangla", "Physics", "Chemistry", "Biology"];
+
+const dhakaLocation: [number, number] = [1225478, 5899921];
+
+const studentName: Array<string> = ["Riead", "Rony", "Rabbi"];
+
+console.log(rollNumber, subjectName, dhakaLocation, studentName);
