@@ -26,5 +26,12 @@ const concatName = (firstName: string, lastName?: string) => {
   return firstName + " " + lastName;
 };
 
-console.log(concatName("Riead"));
-console.log(concatName("Riead", "Mia"));
+// console.log(concatName("Riead"));
+// console.log(concatName("Riead", "Mia"));
+
+
+const greetings = (fullName: string, greet : string = "Hello") =>{
+  console.log(greet + " " + fullName);
+}
+
+greetings("Riead", "Good Morning");
