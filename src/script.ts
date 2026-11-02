@@ -29,9 +29,23 @@ const concatName = (firstName: string, lastName?: string) => {
 // console.log(concatName("Riead"));
 // console.log(concatName("Riead", "Mia"));
 
-
-const greetings = (fullName: string, greet : string = "Hello") =>{
+const greetings = (fullName: string, greet: string = "Hello") => {
   console.log(greet + " " + fullName);
+};
+
+// greetings("Riead");
+
+const sumNumbers = (...numbers: number[]) => {
+  return numbers.reduce((total, sum) => total + sum)
+};
+
+console.log(sumNumbers(5, 7, 10, 12, 15));
+
+
+const userInfo = (...info : [userName: string, userAge: number, isActive: boolean])=>{
+  const [userName, userAge, isActive] = info;
+
+  console.log("User Name is : " + userName + " \nUser age is : " + userAge + " \nUser active status is : " + isActive)
 }
 
-greetings("Riead", "Good Morning");
+userInfo("Riead", 24, true);
