@@ -1,2 +1,2 @@
-console.log("Hello Bangladesh");
 export {};
+// console.log("Hello Bangladesh");
