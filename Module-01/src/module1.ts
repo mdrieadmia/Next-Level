@@ -39,7 +39,7 @@ const sumNumbers = (...numbers: number[]) => {
   return numbers.reduce((total, sum) => total + sum)
 };
 
-console.log(sumNumbers(5, 7, 10, 12, 15));
+// console.log(sumNumbers(5, 7, 10, 12, 15));
 
 
 const userInfo = (...info : [userName: string, userAge: number, isActive: boolean])=>{
